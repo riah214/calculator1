@@ -6,7 +6,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #eeeeee;
+            background-color: white; /* Changed from gray to white */
             padding: 20px;
         }
 
@@ -45,14 +45,9 @@
 
     <script>
         function addNumbers() {
-            // Get values from inputs
             let number1 = parseFloat(document.getElementById("num1").value);
             let number2 = parseFloat(document.getElementById("num2").value);
-
-            // Add them
             let sum = number1 + number2;
-
-            // Display result
             document.getElementById("result").textContent = sum;
         }
     </script>
