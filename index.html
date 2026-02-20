@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple JavaScript Addition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            padding: 20px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 150px;
+        }
+
+        button {
+            padding: 6px 10px;
+            margin-top: 5px;
+        }
+
+        #result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>This is a sample JavaScript and HTML document.</h2>
+
+    <label>First number?</label>
+    <input type="number" id="num1" value="3">
+    <br>
+
+    <label>Second number?</label>
+    <input type="number" id="num2" value="6">
+    <br>
+
+    <button onclick="addNumbers()">Add the Numbers</button>
+
+    <p>You Answer is <span id="result">__________</span></p>
+
+    <script>
+        function addNumbers() {
+            // Get values from inputs
+            let number1 = parseFloat(document.getElementById("num1").value);
+            let number2 = parseFloat(document.getElementById("num2").value);
+
+            // Add them
+            let sum = number1 + number2;
+
+            // Display result
+            document.getElementById("result").textContent = sum;
+        }
+    </script>
+
+</body>
+</html>
